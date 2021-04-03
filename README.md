@@ -1,3 +1,27 @@
+# golang install
+# First, install the package
+sudo apt install -y golang
+
+# Then add the following to your .bashrc
+export GOROOT=/usr/lib/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+# Reload your .bashrc
+source .bashrc
+
+go get github.com/ropnop/kerbrute
+/go/bin 
+./kerbrute userenum --dc IP -d forest userlist.txt
+
+
+
+
+
+
+
+
+
 # Kerbrute
 [![CircleCI](https://circleci.com/gh/ropnop/kerbrute.svg?style=svg)](https://circleci.com/gh/ropnop/kerbrute)
 
